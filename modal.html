@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+
+<body>
+    <div class="contain">
+
+        <ul class="list-group list-group-flush">
+            <h1>Réserver une chambre d'hotel</h1>
+            <li class="list-group-item">
+                <p id="hotel">nom de l'hotel</p>
+                <p id="action"> action</p>
+            </li>
+            <li class="list-group-item">
+                <p class="texte">Hotel de la gare</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="réserverG">Réserver</button>
+            </li>
+            <li class="list-group-item">
+                <p class="texte">Hotel du port</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="réserverP">Réserver</button>
+            </li>
+            <li class="list-group-item">
+                <p class="texte">Hotel de l'angle de la rue </p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="réserverA">Réserver</button>
+            </li>
+        </ul>
+
+        <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <li class="list-group-item">
+                            <p class="modtitre">Num de chambre</p>
+                            <p class="modtitre">Nombre de personne</p>
+                            <p class="modtitre">Date</p>
+                        </li>
+                        <li class="list-group-item" id="boutton">
+                            <input type="number" id="boutonchmbr">
+                            <input type="number">
+                            <input type="date">
+
+                        </li>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
